@@ -61,59 +61,22 @@ const logotype = document.querySelector("header img");
 logotype.addEventListener("click", () => {
   console.log("Found you!");
 });
-const img1 = document.querySelector(".art-1 figure img");
-const heading1 = document.querySelector(".art-1 h2");
+const products = document.querySelectorAll("main article");
+
 const smallHeading1 = document.querySelector(".art-1 h3");
-const description1 = document.querySelector(".art-1 p");
-
-let img2 = document.querySelector(".art-2 figure img");
-let heading2 = document.querySelector(".art-2 h2");
-let smallHeading2 = document.querySelector(".art-2 h3");
-let  description2 = document.querySelector(".art-2 p");
-
-const img3 = document.querySelector(".art-3 figure img");
-const heading3 = document.querySelector(".art-3 h2");
+const smallHeading2 = document.querySelector(".art-2 h3");
 const smallHeading3 = document.querySelector(".art-3 h3");
-const description3 = document.querySelector(".art-3 p");
-const products = [
-  {
-    img: img,
-    heading: heading,
-    smallHeading: smallHeading,
-    description: description,
-  },
-  {
-    img: img1,
-    heading: heading1,
-    smallHeading: smallHeading1,
-    description: description1,
-  },
-  {
-    img: img2,
-    heading: heading2,
-    smallHeading: smallHeading2,
-    description: description2,
-  },
-  {
-    img: img3,
-    heading: heading3,
-    smallHeading: smallHeading3,
-    description: description3,
-  },
-];
-const product1 = productHolder.firstElementChild;
-const product2 = productHolder.firstElementChild.nextElementSibling;
-const product3 = productHolder.firstElementChild.nextElementSibling.nextElementSibling;
-const product4 = productHolder.lastElementChild;
-product1.addEventListener("click", () => {
-  console.log("hi I am" + products[1].smallHeading);
+
+
+products[0].addEventListener("click", () => {
+  console.log("hi I am " + smallHeading1.innerText);
 });
-product2.addEventListener("click", () => {
-  console.log("hi I am" + products[2].smallHeading);
+products[1].addEventListener("click", () => {
+  console.log("hi I am " + smallHeading2.innerText);
 });
-product3.addEventListener("click", () => {
-  console.log("hi I am" + products[3].smallHeading);
+products[2].addEventListener("click", () => {
+  console.log("hi I am " + smallHeading3.innerText);
 });
-product4.addEventListener("click", () => {
-  console.log("hi I am" + products[0].smallHeading);
+products[3].addEventListener("click", () => {
+  console.log("hi I am " + product.smallHeading);
 });
